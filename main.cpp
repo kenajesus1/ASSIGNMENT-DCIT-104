@@ -1,27 +1,24 @@
 #include <iostream>
 
 using namespace std;
-// Satisfied by KENA JESUS//
+//finding all prime numbers from 1 to 100//
 int main()
 {
-    int k,p,a,sum=0;
-    cout<<" THIS PROGRAM FINDS ALL PRIME NUMBERS BETWEEN 1 AND ANY NUMBER YOU ENTER "<<endl;
 
-    cout <<" Enter the number "<<endl;
-    cin >>k;
-    cout<< "This are your Prime Numbers"<<endl;
-    for(p=1;p<k;p++){
-        for(a=2;a<p;a++){
-            if(p%a==0){
-                break;
-            }
+int i,k,t;
+for(i=1;i<100;i++){
+    t=0;
+    for(k=2;k<i;k++){
+        if(i%k==0){
+            t=1;
+            break;
         }
-        if(p==a){
-            sum=sum+p;
-            cout <<p<<endl;
-        }
+
     }
-    cout <<"This the sum of all Prime Numbers between 1 and "<<k<< "="<<sum;
+    if(t==0)
+        cout<<i<<endl;
+}
+
 
 
 
